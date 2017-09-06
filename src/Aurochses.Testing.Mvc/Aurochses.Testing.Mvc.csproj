@@ -14,6 +14,18 @@
     <Version>1.2.0</Version>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.6\Aurochses.Testing.Mvc.xml</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.6\Aurochses.Testing.Mvc.xml</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Aurochses.Runtime" Version="1.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
