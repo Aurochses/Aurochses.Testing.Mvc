@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Xunit;
 
-namespace Aurochses.Testing.Mvc
+namespace Aurochses.Xunit.AspNetCore.Mvc
 {
     /// <summary>
     /// Mvc Assert.
@@ -71,14 +71,14 @@ namespace Aurochses.Testing.Mvc
 
             if (errors == null || errors.Count == 0)
             {
-                Assert.Equal(true, modelState.IsValid);
+                Assert.True(modelState.IsValid);
 
-                Assert.Equal(0, modelState.Count);
+                Assert.Empty(modelState);
 
                 return modelState;
             }
 
-            Assert.Equal(false, modelState.IsValid);
+            Assert.False(modelState.IsValid);
 
             Assert.Equal(errors.Count, modelState.Count);
 
@@ -88,7 +88,7 @@ namespace Aurochses.Testing.Mvc
 
                 Assert.NotNull(modelStateEntry);
 
-                Assert.True(modelStateEntry.Errors.Any(x => x.ErrorMessage == error.Value));
+                Assert.Contains(modelStateEntry.Errors, x => x.ErrorMessage == error.Value);
             }
 
             return modelState;
