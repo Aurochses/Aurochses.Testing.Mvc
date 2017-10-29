@@ -59,7 +59,7 @@ namespace Aurochses.Xunit.AspNetCore.Mvc.Tests
             Assert.Equal(responseCookies.Count, cookies.Count);
             foreach (var item in responseCookies)
             {
-                Assert.True(cookies.Contains($"{item.Key}={item.Value}"));
+                Assert.Contains($"{item.Key}={item.Value}", cookies);
             }
         }
     }
