@@ -7,7 +7,7 @@ using Moq;
 using Xunit;
 using Xunit.Sdk;
 
-namespace Aurochses.Testing.Mvc.Tests
+namespace Aurochses.Xunit.AspNetCore.Mvc.Tests
 {
     public class MvcAssertTests
     {

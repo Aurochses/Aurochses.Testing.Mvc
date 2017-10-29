@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Moq;
 using Xunit;
 
-namespace Aurochses.Testing.Mvc.Tests
+namespace Aurochses.Xunit.AspNetCore.Mvc.Tests
 {
     public class HttpRequestMessageHelpersTests
     {
