@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.Net.Http.Headers;
 
-namespace Aurochses.Testing.Mvc
+namespace Aurochses.Xunit.AspNetCore.Mvc
 {
     /// <summary>
     /// HttpResponseMessageHelpers.
@@ -34,9 +34,8 @@ namespace Aurochses.Testing.Mvc
         public static IDictionary<string, string> GetCookies(this HttpResponseMessage response)
         {
             IDictionary<string, string> result = new Dictionary<string, string>();
-            IEnumerable<string> values;
 
-            if (response.Headers.TryGetValues("Set-Cookie", out values))
+            if (response.Headers.TryGetValues("Set-Cookie", out var values))
             {
                 SetCookieHeaderValue
                     .ParseList(values.ToList())

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Moq;
 using Xunit;
 
-namespace Aurochses.Testing.Mvc.Tests
+namespace Aurochses.Xunit.AspNetCore.Mvc.Tests
 {
     public class HttpRequestMessageHelpersTests
     {
@@ -59,7 +59,7 @@ namespace Aurochses.Testing.Mvc.Tests
             Assert.Equal(responseCookies.Count, cookies.Count);
             foreach (var item in responseCookies)
             {
-                Assert.True(cookies.Contains($"{item.Key}={item.Value}"));
+                Assert.Contains($"{item.Key}={item.Value}", cookies);
             }
         }
     }

@@ -1,11 +1,12 @@
-# Aurochses Testing Mvc
+# Aurochses Xunit AspNetCore Mvc
 
-Aurochses Testing Mvc is a library for creating xUnit tests for MVC.
+Aurochses Xunit AspNetCore Mvc is a library for creating xUnit tests for AspNetCore MVC.
 
 ## NuGet
 
-[![NuGet](https://img.shields.io/nuget/v/Aurochses.Testing.Mvc.svg?style=flat-square)](https://www.nuget.org/packages/Aurochses.Testing.Mvc)
-[![NuGet](https://img.shields.io/nuget/dt/Aurochses.Testing.Mvc.svg?style=flat-square)](https://www.nuget.org/packages/Aurochses.Testing.Mvc)
+[![NuGet](https://img.shields.io/nuget/v/Aurochses.Xunit.AspNetCore.Mvc.svg?style=flat-square)](https://www.nuget.org/packages/Aurochses.Xunit.AspNetCore.Mvc)
+[![NuGet](https://img.shields.io/nuget/dt/Aurochses.Xunit.AspNetCore.Mvc.svg?style=flat-square)](https://www.nuget.org/packages/Aurochses.Xunit.AspNetCore.Mvc)
+[![NuGet Status](http://nugetstatus.com/Aurochses.Xunit.AspNetCore.Mvc.png)](http://nugetstatus.com/packages/Aurochses.Xunit.AspNetCore.Mvc)
 
 ## Builds
 

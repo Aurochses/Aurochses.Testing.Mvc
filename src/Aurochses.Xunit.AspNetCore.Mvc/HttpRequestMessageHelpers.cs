@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.Net.Http.Headers;
 
-namespace Aurochses.Testing.Mvc
+namespace Aurochses.Xunit.AspNetCore.Mvc
 {
     /// <summary>
     /// HttpRequestMessageHelpers.
