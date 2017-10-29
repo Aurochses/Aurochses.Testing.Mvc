@@ -12,6 +12,8 @@
     <RepositoryUrl>https://github.com/Aurochses/Aurochses.Xunit.AspNetCore.Mvc</RepositoryUrl>
     <PackageTags>Test Unit xunit AspNetCore MVC</PackageTags>
     <Version>1.2.1</Version>
+	
+	<IsPackable>true</IsPackable>
 
     <!-- Required in both test/product projects. This is a temporary workaround for https://github.com/Microsoft/vstest/issues/800 -->
     <DebugType>Full</DebugType>
