@@ -11,7 +11,7 @@
     <PackageIconUrl>https://www.gravatar.com/avatar/cb5925a77e502401f95bf2738b123994?s=64</PackageIconUrl>
     <RepositoryUrl>https://github.com/Aurochses/Aurochses.Xunit.AspNetCore.Mvc</RepositoryUrl>
     <PackageTags>Test Unit xunit AspNetCore MVC</PackageTags>
-    <Version>1.2.1</Version>
+    <Version>2.0.0</Version>
 	
 	<IsPackable>true</IsPackable>
 
