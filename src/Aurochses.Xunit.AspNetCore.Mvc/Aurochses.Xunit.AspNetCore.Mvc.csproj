@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.6</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Aurochses</Authors>
     <Company>Aurochses</Company>
     <Description>Library for creating xUnit tests for AspNetCore MVC.</Description>
@@ -20,22 +20,22 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard1.6\Aurochses.Xunit.AspNetCore.Mvc.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netstandard2.0\Aurochses.Xunit.AspNetCore.Mvc.xml</DocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard1.6\Aurochses.Xunit.AspNetCore.Mvc.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard2.0\Aurochses.Xunit.AspNetCore.Mvc.xml</DocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aurochses.Runtime" Version="1.2.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.4" />
-    <PackageReference Include="Microsoft.Net.Http.Headers" Version="1.1.2" />
-    <PackageReference Include="xunit" Version="2.3.0" />
+    <PackageReference Include="Aurochses.Runtime" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Net.Http.Headers" Version="2.0.1" />
+    <PackageReference Include="xunit" Version="2.3.1" />
   </ItemGroup>
 
 </Project>
