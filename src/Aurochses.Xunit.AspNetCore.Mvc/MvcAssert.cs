@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Aurochses.Runtime;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
@@ -26,7 +25,7 @@ namespace Aurochses.Xunit.AspNetCore.Mvc
 
             Assert.Equal(viewName, viewResult.ViewName);
 
-            Assert.True(model.ValueEquals(viewResult.Model));
+            ObjectAssert.DeepEquals(model, viewResult.Model);
 
             return viewResult;
         }
@@ -115,7 +114,7 @@ namespace Aurochses.Xunit.AspNetCore.Mvc
         {
             var jsonResult = Assert.IsType<JsonResult>(actionResult);
 
-            Assert.True(value.ValueEquals(jsonResult.Value));
+            ObjectAssert.DeepEquals(value, jsonResult.Value);
 
             return jsonResult;
         }

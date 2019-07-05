@@ -32,7 +32,7 @@ namespace Aurochses.Xunit.AspNetCore.Mvc.Tests
         }
 
         [Fact]
-        public void ViewResult_ThrowsTrueException_WhenModelNotEqual()
+        public void ViewResult_ThrowsAssertActualExpectedException_WhenModelNotEqual()
         {
             // Arrange
             var viewResult = new ViewResult
@@ -44,7 +44,7 @@ namespace Aurochses.Xunit.AspNetCore.Mvc.Tests
             };
 
             // Act & Assert
-            Assert.Throws<TrueException>(() => MvcAssert.ViewResult(viewResult, null, new {OtherValue = "TestValue"}));
+            Assert.Throws<AssertActualExpectedException>(() => MvcAssert.ViewResult(viewResult, null, new {OtherValue = "TestValue"}));
         }
 
         [Fact]
@@ -231,13 +231,13 @@ namespace Aurochses.Xunit.AspNetCore.Mvc.Tests
         }
 
         [Fact]
-        public void JsonResult_ThrowsTrueException_WhenValueNotEqual()
+        public void JsonResult_ThrowsAssertActualExpectedException_WhenValueNotEqual()
         {
             // Arrange
             var jsonResult = new JsonResult(new {Value = "TestValue"});
 
             // Act & Assert
-            Assert.Throws<TrueException>(() => MvcAssert.JsonResult(jsonResult, new {OtherValue = "TestValue"}));
+            Assert.Throws<AssertActualExpectedException>(() => MvcAssert.JsonResult(jsonResult, new {OtherValue = "TestValue"}));
         }
 
         [Fact]
